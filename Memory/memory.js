@@ -83,7 +83,7 @@ function setColor(type) {
             $('.found').css('background', colorFound)
             break
         default:
-            console.log('Something went wrong')
+            console.log('Could not change the cards\' color')
     }
 }
 
@@ -110,7 +110,7 @@ function getRandomLetter(rows) {
 }
 
 function onCardClick(card) {
-    if (!awaitingNextMove || card === selectedCard || gameFinished)
+    if (!awaitingNextMove || card === selectedCard || gameFinished || $('#card-' + card).hasClass('found'))
         return
 
     let x = card % cards.length
