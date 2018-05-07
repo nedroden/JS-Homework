@@ -3,7 +3,7 @@
  *
  * @author      Robert Monden
  * @version     1.0.0
- * @license     BSD
+ * @license     MIT
  */
 
 var cards = []
